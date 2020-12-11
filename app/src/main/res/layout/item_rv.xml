@@ -1,6 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_marginVertical="10dp"
+    android:background="@color/white"
+    app:cardBackgroundColor="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="20dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/news_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="15dp"
+            android:src="@drawable/ruang1"
+            android:scaleType="fitCenter"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="10pt"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Ruang A15"/>
+            <TextView
+                android:id="@+id/statusRuang"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textSize="7pt"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:text="Tersedia"/>
+            <Button
+                android:id="@+id/buttonRuang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="6pt"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:text="Detail"
+                android:background="@drawable/roundbutton"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
