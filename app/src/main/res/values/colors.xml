@@ -9,5 +9,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="orange">#F3AF00</color>
     <color name="lightyellow">#F3EAB8</color>
-
+    <color name="headings">#3797CF</color>
+    <color name="border">#F3EAB8</color>
+    <color name="layout">#000080</color>
+    <color name="grey">#E5E5E5</color>
+    <color name="solidCircle">#AAFFFFFF</color>
+    <color name="circleBorder">#50FFFFFF</color>
 </resources>
