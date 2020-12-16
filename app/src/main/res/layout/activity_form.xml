@@ -138,14 +138,13 @@
           app:layout_constraintBottom_toBottomOf="parent"
           tools:layout_editor_absoluteX="40dp" />
 
-      <Spinner
+      <EditText
           android:id="@+id/listRuang"
           android:layout_width="275dp"
           android:layout_height="41dp"
           android:layout_marginBottom="8dp"
           android:background="@drawable/kokax"
           android:ems="13"
-          android:entries="@array/list_ruang"
           app:layout_constraintBottom_toTopOf="@+id/tanggal"
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintHorizontal_bias="0.492"
