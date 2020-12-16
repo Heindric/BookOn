@@ -4,16 +4,16 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class BookViewModel(private val mhsRepo : BookRepo) : ViewModel() {
-    var mhs = MutableLiveData<List<ModelBook>>()
+class BookViewModel(private val BookRepo : BookRepo) : ViewModel() {
+    var book = MutableLiveData<List<ModelBook>>()
 
-    fun getMhs(): LiveData<List<ModelBook>> {
-        mhs.value = mhsRepo.getBooking()
-        return mhs
+    fun getBook(): LiveData<List<ModelBook>> {
+        book.value = BookRepo.getBooking()
+        return book
     }
 
-    fun addMhs(newMhs: ModelBook){
-        mhsRepo.addBooking(newMhs)
-        mhs.value = mhsRepo.getBooking()
+    fun addBook(newBook: ModelBook){
+        BookRepo.addBooking(newBook)
+        book.value = BookRepo.getBooking()
     }
 }
