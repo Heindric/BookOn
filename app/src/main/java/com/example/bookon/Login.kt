@@ -1,12 +1,14 @@
 package com.example.bookon
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.fragment_profile.*
+import kotlinx.android.synthetic.main.user_profile.*
 
 class Login : AppCompatActivity() {
     private lateinit var mAuth: FirebaseAuth
@@ -15,7 +17,7 @@ class Login : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         Register_tv.setOnClickListener {
-            val intent = Intent(this,Register::class.java)
+            val intent = Intent(this, Register::class.java)
             startActivity(intent)
         }
         mAuth = FirebaseAuth.getInstance()
@@ -58,7 +60,8 @@ class Login : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java))
         }else{
             Toast.makeText(baseContext, "Login failed",
-                Toast.LENGTH_SHORT).show()
+                    Toast.LENGTH_SHORT).show()
         }
     }
+
 }

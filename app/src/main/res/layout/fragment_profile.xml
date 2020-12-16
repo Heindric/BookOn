@@ -31,6 +31,7 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/ic_baseline_account_circle_24" />
 
+
         </RelativeLayout>
 
         <TextView
@@ -59,13 +60,17 @@
             android:textSize="14sp" />
 
         <ImageButton
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_alignParentRight="true"
             android:layout_marginRight="15dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/layout"
+            android:onClick="logout"
+            android:id="@+id/logout_btn"
             android:scaleType="centerInside"
-            android:src="@drawable/logout" />
+            android:src="@drawable/icon_logout"
+            app:tint="@android:color/white" />
 
     </RelativeLayout>
 
