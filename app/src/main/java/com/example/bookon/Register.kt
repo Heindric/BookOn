@@ -3,13 +3,16 @@ package com.example.bookon
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.UserProfileChangeRequest
 import kotlinx.android.synthetic.main.activity_register.*
 
 class Register : AppCompatActivity(), View.OnClickListener {
+    val TAG = "Activity"
     var mAuth: FirebaseAuth = FirebaseAuth.getInstance()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -81,5 +84,34 @@ class Register : AppCompatActivity(), View.OnClickListener {
     private fun updateEmail() {
         val user = mAuth.currentUser
         user!!.updateEmail(email_et.text.toString())
+    }
+
+    override fun onStart(){
+        super.onStart()
+        Toast.makeText(getApplicationContext(),"onStart",Toast.LENGTH_SHORT).show();
+        Log.d(TAG,"onStart")
+    }
+    override fun onResume(){
+        super.onResume()
+        Toast.makeText(getApplicationContext(),"onResume",Toast.LENGTH_SHORT).show();
+        Log.d(TAG,"onResume")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Toast.makeText(getApplicationContext(),"onPause",Toast.LENGTH_SHORT).show();
+        Log.d(TAG,"onPause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Toast.makeText(getApplicationContext(),"onStop",Toast.LENGTH_SHORT).show();
+        Log.d(TAG,"onStop")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG,"onDestroy")
+        Toast.makeText(getApplicationContext(),"onDestroy",Toast.LENGTH_SHORT).show()
     }
 }

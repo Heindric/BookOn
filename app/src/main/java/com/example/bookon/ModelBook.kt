@@ -1,4 +1,4 @@
 package com.example.bookon
 
-data class ModelBook(val nama: String, val ruang: String, val tanggal: String) {
+data class ModelBook(val nama: String, val ruang: String, val tanggal: String, val waktu : String) {
 }

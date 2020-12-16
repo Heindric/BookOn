@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import com.example.bookon.Login
 import com.example.bookon.R
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.fragment_profile.view.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -39,7 +40,6 @@ class ProfileFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_profile, container, false)
-
     }
 
     companion object {

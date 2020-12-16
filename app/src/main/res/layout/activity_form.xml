@@ -4,172 +4,179 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgorenbiru"
-    tools:context=".Form"
     android:layout_gravity="center"
-    >
+    android:background="@drawable/bgorenbiru"
+    tools:context=".BookingActivity">
 
 
-  <androidx.cardview.widget.CardView
+    <androidx.cardview.widget.CardView
 
-      android:id="@+id/cardView"
-      android:layout_width="346dp"
-      android:layout_height="436dp"
-      android:clickable="true"
-      app:cardCornerRadius="15dp"
-      app:cardElevation="20dp"
-      app:layout_constraintBottom_toTopOf="@+id/bookbtn"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      tools:ignore="MissingConstraints"
-      app:cardBackgroundColor="#48FFFFFF"
-      >
+        android:id="@+id/cardView"
+        android:layout_width="346dp"
+        android:layout_height="436dp"
+        android:clickable="true"
+        app:cardBackgroundColor="#48FFFFFF"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/bookbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="75dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="75dp">
 
-      <TextView
-          android:id="@+id/ruang"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Ruang"
-          android:textColor="#000080"
-          app:layout_constraintBottom_toTopOf="@+id/listRuang"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.111"
-          app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/ruang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ruang"
+                android:textColor="#000080"
+                app:layout_constraintBottom_toTopOf="@+id/listRuang"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.111"
+                app:layout_constraintStart_toStartOf="parent" />
 
-      <TextView
-          android:id="@+id/judulForm"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Form Booking"
-          android:textColor="@color/white"
-          android:textSize="30dp"
-          app:layout_constraintBottom_toTopOf="@+id/Nama"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/judulForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Form Booking"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toTopOf="@+id/Nama"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-      <TextView
-          android:id="@+id/Nama"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginBottom="8dp"
-          android:text="Nama Lengkap"
-          android:textColor="#000080"
-          app:layout_constraintBottom_toTopOf="@+id/editName"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.138"
-          app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/Nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Nama Lengkap"
+                android:textColor="#000080"
+                app:layout_constraintBottom_toTopOf="@+id/editName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent" />
 
-      <TextView
-          android:id="@+id/tanggal"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Tanggal Pemesanan"
-          android:textColor="#000080"
-          app:layout_constraintBottom_toTopOf="@+id/editDate"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.164"
-          app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Pemesanan"
+                android:textColor="#000080"
+                app:layout_constraintBottom_toTopOf="@+id/editDate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.164"
+                app:layout_constraintStart_toStartOf="parent" />
 
-      <TextView
-          android:id="@+id/textView4"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Waktu Pemesanan"
-          android:textColor="#000080"
-          app:layout_constraintBottom_toTopOf="@+id/editTime"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.148"
-          app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waktu Pemesanan"
+                android:textColor="#000080"
+                app:layout_constraintBottom_toTopOf="@+id/editTime"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.148"
+                app:layout_constraintStart_toStartOf="parent" />
 
-      <EditText
-          android:id="@+id/editName"
-          android:layout_width="275dp"
-          android:layout_height="41dp"
-          android:layout_marginBottom="4dp"
-          android:background="@drawable/kokax"
-          android:ems="13"
-          android:textColor="#000000"
-          android:inputType="textPersonName"
-          app:layout_constraintBottom_toTopOf="@+id/ruang"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.507"
-          app:layout_constraintStart_toStartOf="parent" />
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="275dp"
+                android:layout_height="41dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/kokax"
+                android:ems="13"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toTopOf="@+id/ruang"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent" />
 
-      <EditText
-          android:id="@+id/editDate"
-          android:layout_width="275dp"
-          android:layout_height="41dp"
-          android:layout_marginBottom="20dp"
-          android:background="@drawable/kokax"
-          android:ems="13"
-          android:textColor="#000000"
-          android:inputType="date"
-          app:layout_constraintBottom_toTopOf="@+id/textView4"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.492"
-          app:layout_constraintStart_toStartOf="parent" />
+            <EditText
+                android:id="@+id/editDate"
+                android:layout_width="275dp"
+                android:layout_height="41dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/kokax"
+                android:ems="13"
+                android:inputType="date"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toTopOf="@+id/textView4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent" />
 
-      <EditText
-          android:id="@+id/editTime"
-          android:layout_width="275dp"
-          android:layout_height="41dp"
-          android:background="@drawable/kokax"
-          android:ems="13"
-          android:textColor="#000000"
-          android:inputType="time"
-          app:layout_constraintBottom_toTopOf="@+id/checkBox"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent" />
+            <EditText
+                android:id="@+id/editTime"
+                android:layout_width="275dp"
+                android:layout_height="41dp"
+                android:background="@drawable/kokax"
+                android:ems="13"
+                android:inputType="time"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toTopOf="@+id/checkBox"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
-      <CheckBox
-          android:id="@+id/checkBox"
-          android:layout_width="169dp"
-          android:layout_height="48dp"
-          android:text="Data sudah benar"
-          android:textColor="#000080"
-          app:layout_constraintBottom_toBottomOf="parent"
-          tools:layout_editor_absoluteX="40dp" />
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="169dp"
+                android:layout_height="48dp"
+                android:text="Data sudah benar"
+                android:textColor="#000080"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="40dp" />
 
-      <EditText
-          android:id="@+id/listRuang"
-          android:layout_width="275dp"
-          android:layout_height="41dp"
-          android:layout_marginBottom="8dp"
-          android:background="@drawable/kokax"
-          android:ems="13"
-          app:layout_constraintBottom_toTopOf="@+id/tanggal"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintHorizontal_bias="0.492"
-          app:layout_constraintStart_toStartOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-  </androidx.cardview.widget.CardView>
+            <EditText
+                android:id="@+id/listRuang"
+                android:layout_width="275dp"
+                android:layout_height="41dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/kokax"
+                android:ems="13"
+                app:layout_constraintBottom_toTopOf="@+id/tanggal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
 
+    <Button
+        android:id="@+id/bookbtn"
 
-  <Button
-      android:id="@+id/bookbtn"
-      android:layout_width="133dp"
-      android:layout_height="58dp"
-      android:backgroundTint="#13138A"
-      android:text="Book"
-      android:textColor="#FFFFFF"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/cardView"
-      app:layout_constraintVertical_bias="0.479"
-      tools:ignore="MissingConstraints" />
+        android:layout_width="133dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="192dp"
+        android:backgroundTint="#13138A"
+        android:text="Book"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
+        <ScrollView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/bookbtn"
+            android:background="@color/white"
+            android:padding="10dp">
 
-
-
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" />
+        </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
