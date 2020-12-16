@@ -1,405 +1,431 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
     tools:context=".fragment.HomeFragment">
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bookingBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="32dp"
+        android:onClick="openForm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-        android:layout_marginTop="80dp"
-        android:layout_marginBottom="80dp"
-        android:background="@color/white"
-    >
-    <LinearLayout
-        android:orientation="vertical"
+        android:id="@+id/scrollView5"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="75dp"
+        tools:layout_editor_absoluteY="80dp">
 
-
-        <androidx.cardview.widget.CardView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:layout_marginVertical="10dp"
-            android:background="@color/white"
-            app:cardBackgroundColor="@color/white"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="20dp">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <LinearLayout
+
+            <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-              >
-                <ImageView
+                android:layout_height="180dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/white"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp">
 
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginVertical="15dp"
-                    android:layout_marginHorizontal="15dp"
-                    android:src="@drawable/ruang1"
-                    android:scaleType="fitCenter"
-                    />
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginVertical="15dp"
-                    android:layout_marginRight="15dp">
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:textSize="10pt"
-                        android:textAllCaps="true"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:text="Ruang A15"/>
-                    <TextView
-                        android:id="@+id/statusRuang1"
-                        android:layout_width="match_parent"
-                        android:layout_height="70dp"
-                        android:textSize="7pt"
-                        android:textColor="@color/black"
-                        android:textAllCaps="false"
-                        android:text="Tersedia"/>
-                    <Button
-                        android:id="@+id/buttonRuang1"
+                    <ImageView
+
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginVertical="15dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ruang1" />
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="6pt"
-                        android:textColor="@color/white"
-                        android:textAllCaps="false"
-                        android:text="Detail"
-                        android:background="@drawable/roundbutton"
-                        />
+                        android:layout_marginVertical="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Ruang A"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="10pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/statusRuang1"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Tersedia"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="7pt" />
+
+                        <TextView
+                            android:id="@+id/textRuangA"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:text="08:00-10:00 jadwal booking diisi disini"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="10pt"
+
+                            />
+
+
+                    </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
 
-        </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:layout_marginVertical="10dp"
-            android:background="@color/white"
-            app:cardBackgroundColor="@color/white"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="20dp">
-
-            <LinearLayout
+            <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <ImageView
+                android:layout_height="180dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/white"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp">
 
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginVertical="15dp"
-                    android:layout_marginHorizontal="15dp"
-                    android:src="@drawable/ruang2"
-                    android:scaleType="fitCenter"
-                    />
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginVertical="15dp"
-                    android:layout_marginRight="15dp">
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:textSize="10pt"
-                        android:textAllCaps="true"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:text="Ruang A15"/>
-                    <TextView
-                        android:id="@+id/statusRuang2"
-                        android:layout_width="match_parent"
-                        android:layout_height="70dp"
-                        android:textSize="7pt"
-                        android:textColor="@color/black"
-                        android:textAllCaps="false"
-                        android:text="Tersedia"/>
-                    <Button
-                        android:id="@+id/buttonRuang2"
+                    <ImageView
+
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginVertical="15dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ruang2" />
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="6pt"
-                        android:textColor="@color/white"
-                        android:textAllCaps="false"
-                        android:text="Detail"
-                        android:background="@drawable/roundbutton"
-                        />
+                        android:layout_marginVertical="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Ruang B"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="10pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/statusRuang2"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Tersedia"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="7pt" />
+
+                        <TextView
+                            android:id="@+id/textRuangB"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:text="jadwal booking diisi disini"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="10pt"
+
+                            />
+
+                    </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
 
-        </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:layout_marginVertical="10dp"
-            android:background="@color/white"
-            app:cardBackgroundColor="@color/white"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="20dp">
-
-            <LinearLayout
+            <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <ImageView
+                android:layout_height="180dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/white"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp">
 
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginVertical="15dp"
-                    android:layout_marginHorizontal="15dp"
-                    android:src="@drawable/ruang3"
-                    android:scaleType="fitCenter"
-                    />
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginVertical="15dp"
-                    android:layout_marginRight="15dp">
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:textSize="10pt"
-                        android:textAllCaps="true"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:text="Ruang A15"/>
-                    <TextView
-                        android:id="@+id/statusRuang3"
-                        android:layout_width="match_parent"
-                        android:layout_height="70dp"
-                        android:textSize="7pt"
-                        android:textColor="@color/black"
-                        android:textAllCaps="false"
-                        android:text="Tersedia"/>
-                    <Button
-                        android:id="@+id/buttonRuang3"
+                    <ImageView
+
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginVertical="15dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ruang3" />
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="6pt"
-                        android:textColor="@color/white"
-                        android:textAllCaps="false"
-                        android:text="Detail"
-                        android:background="@drawable/roundbutton"
-                        />
+                        android:layout_marginVertical="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Ruang C"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="10pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/statusRuang3"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Tersedia"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="7pt" />
+
+                        <TextView
+                            android:id="@+id/textRuangC"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:text="jadwal booking diisi disini"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="10pt"
+
+                            />
+
+                    </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
 
-        </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:layout_marginVertical="10dp"
-            android:background="@color/white"
-            app:cardBackgroundColor="@color/white"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="20dp">
-
-            <LinearLayout
+            <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <ImageView
+                android:layout_height="180dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/white"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp">
 
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginVertical="15dp"
-                    android:layout_marginHorizontal="15dp"
-                    android:src="@drawable/ruang5"
-                    android:scaleType="fitCenter"
-                    />
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginVertical="15dp"
-                    android:layout_marginRight="15dp">
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:textSize="10pt"
-                        android:textAllCaps="true"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:text="Ruang A15"/>
-                    <TextView
-                        android:id="@+id/statusRuang4"
-                        android:layout_width="match_parent"
-                        android:layout_height="70dp"
-                        android:textSize="7pt"
-                        android:textColor="@color/black"
-                        android:textAllCaps="false"
-                        android:text="Tersedia"/>
-                    <Button
-                        android:id="@+id/buttonRuang4"
+                    <ImageView
+
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginVertical="15dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ruang5" />
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="6pt"
-                        android:textColor="@color/white"
-                        android:textAllCaps="false"
-                        android:text="Detail"
-                        android:background="@drawable/roundbutton"
-                        />
+                        android:layout_marginVertical="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Ruang D"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="10pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/statusRuang4"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Tersedia"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="7pt" />
+
+                        <TextView
+                            android:id="@+id/textRuangD"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:text="jadwal booking diisi disini"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="10pt"
+
+                            />
+
+                    </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
 
-        </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:layout_marginVertical="10dp"
-            android:background="@color/white"
-            app:cardBackgroundColor="@color/white"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="20dp">
-
-            <LinearLayout
+            <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginVertical="15dp"
-                    android:layout_marginHorizontal="15dp"
-                    android:src="@drawable/ruang8"
-                    android:scaleType="fitCenter"
-                    />
+                android:layout_height="180dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/white"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginVertical="15dp"
-                    android:layout_marginRight="15dp">
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:textSize="10pt"
-                        android:textAllCaps="true"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:text="Ruang A15"/>
-                    <TextView
-                        android:id="@+id/statusRuang5"
-                        android:layout_width="match_parent"
-                        android:layout_height="70dp"
-                        android:textSize="7pt"
-                        android:textColor="@color/black"
-                        android:textAllCaps="false"
-                        android:text="Tersedia"/>
-                    <Button
-                        android:id="@+id/buttonRuang5"
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginVertical="15dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ruang8" />
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="6pt"
-                        android:textColor="@color/white"
-                        android:textAllCaps="false"
-                        android:text="Detail"
-                        android:background="@drawable/roundbutton"
-                        />
+                        android:layout_marginVertical="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Ruang E"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="10pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/statusRuang5"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Tersedia"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="7pt" />
+
+                        <TextView
+                            android:id="@+id/textRuangE"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:text="jadwal booking diisi disini"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="10pt"
+
+                            />
+
+                    </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
 
-        </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:layout_marginVertical="10dp"
-            android:background="@color/white"
-            app:cardBackgroundColor="@color/white"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="20dp">
-
-            <LinearLayout
+            <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginVertical="15dp"
-                    android:layout_marginHorizontal="15dp"
-                    android:src="@drawable/ruang9"
-                    android:scaleType="fitCenter"
-                    />
+                android:layout_height="180dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/white"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginVertical="15dp"
-                    android:layout_marginRight="15dp">
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:textSize="10pt"
-                        android:textAllCaps="true"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:text="Ruang A15"/>
-                    <TextView
-                        android:id="@+id/statusRuang6"
-                        android:layout_width="match_parent"
-                        android:layout_height="70dp"
-                        android:textSize="7pt"
-                        android:textColor="@color/black"
-                        android:textAllCaps="false"
-                        android:text="Tersedia"/>
-                    <Button
-                        android:id="@+id/buttonRuang6"
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginVertical="15dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ruang9" />
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="6pt"
-                        android:textColor="@color/white"
-                        android:textAllCaps="false"
-                        android:text="Detail"
-                        android:background="@drawable/roundbutton"
-                        />
+                        android:layout_marginVertical="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Ruang F"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="10pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/statusRuang6"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Tersedia"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="7pt" />
+
+                        <TextView
+                            android:id="@+id/textRuangF"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:text="jadwal booking diisi disini"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="10pt"
+
+                            />
+                    </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
 
-        </androidx.cardview.widget.CardView>
-
+            </androidx.cardview.widget.CardView>
 
 
-    </LinearLayout>
-</ScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

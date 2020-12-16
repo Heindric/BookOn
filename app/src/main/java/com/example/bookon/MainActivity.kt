@@ -94,4 +94,9 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
+
+    fun openForm(view: View) {
+        val intent = Intent(this, Form::class.java)
+        startActivity(intent)
+    }
 }
