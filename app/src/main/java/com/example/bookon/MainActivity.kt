@@ -87,4 +87,11 @@ class MainActivity : AppCompatActivity() {
             profileIcon.setImageResource(R.drawable.ic_baseline_person)
         }
     }
+
+    fun logout(view: View) {
+        FirebaseAuth.getInstance().signOut();
+        val intent = Intent(this, Login::class.java)
+        startActivity(intent)
+        finish()
+    }
 }

@@ -58,14 +58,16 @@
             android:textColor="@color/white"
             android:textSize="14sp" />
 
-        <ImageView
+        <ImageButton
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentRight="true"
             android:layout_marginRight="15dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/layout"
+            android:id="@+id/logout_btn"
             android:scaleType="centerInside"
-            android:src="@drawable/iconback"
+            android:src="@drawable/icon_logout"
             app:tint="@android:color/white" />
 
     </RelativeLayout>
