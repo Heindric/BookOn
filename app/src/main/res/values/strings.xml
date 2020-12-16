@@ -1,5 +1,13 @@
 <resources>
-    <string name="app_name">Book On</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">BookOn</string>
+    <string name="pilih_ruang">Pilih Ruang</string>
+
+    <string-array name="list_ruang">
+        <item>Ruang A</item>
+        <item>Ruang B</item>
+        <item>Ruang C</item>
+        <item>Ruang D</item>
+        <item>Ruang E</item>
+        <item>Ruang F</item>
+    </string-array>
 </resources>
