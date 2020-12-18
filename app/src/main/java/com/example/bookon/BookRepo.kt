@@ -5,7 +5,7 @@ class BookRepo {
 
 
     init {
-        bookingList.add(ModelBook("Gilbert", "A15", "15 Desember 2020", "15.00"))
+        bookingList.add(ModelBook("Gilbert", "A15", "15-12-2020", "15.00"))
 
     }
 

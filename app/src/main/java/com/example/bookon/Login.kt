@@ -64,7 +64,7 @@ class Login : AppCompatActivity() {
 
     private fun updateUI(currentUser: FirebaseUser?) {
         if (currentUser != null) {
-            startActivity(Intent(this, BookingActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
         } else {
             Toast.makeText(baseContext, "Login failed",
                     Toast.LENGTH_SHORT).show()

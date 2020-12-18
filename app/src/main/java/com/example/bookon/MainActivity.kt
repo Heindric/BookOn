@@ -130,4 +130,8 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG,"onDestroy")
         Toast.makeText(getApplicationContext(),"onDestroy", Toast.LENGTH_SHORT).show()
     }
+
+    fun booking(view: View) {
+
+    }
 }
